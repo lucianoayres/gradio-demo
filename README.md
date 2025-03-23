@@ -1,3 +1,10 @@
+---
+title: gradio-demo
+app_file: app.py
+sdk: gradio
+sdk_version: 5.22.0
+---
+
 # Gradio: Demo for Machine Learning Web Apps in Python
 
 Gradio is an open-source Python library that makes it easy to create customizable, interactive web interfaces for machine learning models. It enables you to build demos rapidly without requiring extensive web development expertise. With Gradio, you can share your models with collaborators or the public, test them live, and even deploy them on cloud platforms for free. Its intuitive interface and simple API allow you to focus on your model rather than the underlying infrastructure.
@@ -76,6 +83,11 @@ For free, permanent hosting with GPU support, deploy your app on [Hugging Face S
 ```bash
 gradio deploy
 ```
+
+> **IMPORTANT:** To proceed, you'll need an access token with **Write** permission on Hugging Face. If you haven't generated one yet, please [create one here](https://huggingface.co/settings/tokens).
+
+Project URL on Hugging Face:
+[https://huggingface.co/spaces/layers2024/gradio-demo](https://huggingface.co/spaces/layers2024/gradio-demo)
 
 ## References & Resources
 
