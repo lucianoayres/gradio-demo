@@ -117,25 +117,12 @@ client = Client("abidlabs/whisper")
 
 # Use the client to predict/transcribe the audio.
 output = client.predict(audio=handle_file("audio_sample.wav"))
-print(output)  # Expected output: "This is a test of the whisper speech recognition model."
+print(output)
 ```
-
-#### About the Gradio Python Client
-
-- **Simplicity:** The Gradio Python client allows you to treat any Gradio app as an API, abstracting away complex HTTP calls.
-- **Flexibility:** Although commonly used with apps on Hugging Face Spaces, you can connect to any Gradio app (hosted anywhere) by providing the full URL.
-- **Authentication:** For private Spaces, pass your Hugging Face token via the `hf_token` parameter.
-- **State Management:** The client handles session state automatically—making it easier to interact with demos that have persistent state.
-- **Asynchronous Jobs:** For long-running predictions, the client supports asynchronous job submissions with status updates and cancellation.
-
-### Additional Client Features
-
-- **Duplicating Spaces:** To avoid rate limits on public Spaces, duplicate a Space for private use with `Client.duplicate()`.
-- **Multiple Endpoints:** Use `api_name` to call specific endpoints when a Gradio app exposes several.
-- **File Handling:** The `handle_file` utility simplifies file uploads to the Gradio server.
 
 ## References & Resources
 
 - [Gradio GitHub Repository](https://github.com/gradio-app/gradio)
 - [Gradio Documentation](https://gradio.app/)
+- [Gradio Components](https://www.gradio.app/docs/gradio/introduction)
 - [Getting Started with the Gradio Python Client](https://www.gradio.app/guides/getting-started-with-the-python-client)
