@@ -81,6 +81,8 @@ gradio deploy
 
 > **IMPORTANT:** To proceed, you'll need an access token with **Write** permission on Hugging Face. If you haven't generated one yet, please [create one here](https://huggingface.co/settings/tokens).
 
+Optionally, a GitHub Action will be configured to automatically update your Hugging Face repository on every push by adding your Hugging Face token as the `hf_token` secret in your repository.
+
 Project URL on Hugging Face:  
 [https://huggingface.co/spaces/layers2024/gradio-demo](https://huggingface.co/spaces/layers2024/gradio-demo)
 
